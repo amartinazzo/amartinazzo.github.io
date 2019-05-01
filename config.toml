@@ -1,0 +1,40 @@
+baseurl = "/"
+languageCode = "en-us"
+theme = "hello-friend"
+paginate = 5
+
+[params]
+  contentTypeName = "content/posts"
+  defaultTheme = "dark"             # "light" or "dark"
+  showMenuItems = 2                 # if you set this to 0, only submenu trigger will be visible
+  showReadingTime = false           # show reading time in minutes for posts
+
+[languages]
+  [languages.en]
+    title = "ana"
+    subtitle = ""
+    keywords = ""
+    copyright = ""
+    menuMore = "show more"
+    writtenBy = "written by"
+    readMore = "read more"
+    readOtherPosts = "read other posts"
+    newerPosts = "newer posts"
+    olderPosts = "older posts"
+    minuteReadingTime = "min read"
+    dateFormatSingle = "2006-01-02"
+    dateFormatList = "2006-01-02"
+
+    [languages.en.params.logo]
+      logoText = "cd /home/ana/"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "about"
+        url = "/about"

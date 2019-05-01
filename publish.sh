@@ -26,7 +26,7 @@ echo "generating site"
 HUGO_ENV="production" hugo
 
 echo "updating gh-pages branch"
-cd public && git add --all && git commit -m "Publishing to gh-pages (publish.sh)"
+cd public && git add --all && git commit -m "publishing to gh-pages"
 
 echo "pushing to publish"
 git push origin gh-pages -f

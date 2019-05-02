@@ -1,4 +1,4 @@
-baseurl = "https://amartinazzo.github.io/"
+baseurl = "/"
 theme = "hermit-mod"
 languageCode = "en-us"
 defaultContentLanguage = "en"

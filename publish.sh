@@ -25,7 +25,7 @@ rm -rf public/*
 echo "generating site"
 HUGO_ENV="production" hugo
 
-echo "updating gh-pages branch"
+echo "updating master branch"
 cd public && git add --all && git commit -m "publishing to master"
 
 echo "pushing to origin master"

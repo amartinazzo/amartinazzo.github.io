@@ -1,13 +1,13 @@
 baseurl = "/"
+theme = "hermit"
 languageCode = "en-us"
-theme = "hello-friend"
-paginate = 5
+defaultContentLanguage = "en"
 
 [params]
-  contentTypeName = "content/posts"
-  defaultTheme = "dark"             # "light" or "dark"
-  showMenuItems = 2                 # if you set this to 0, only submenu trigger will be visible
-  showReadingTime = false           # show reading time in minutes for posts
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
 
 [languages]
   [languages.en]
@@ -15,26 +15,32 @@ paginate = 5
     subtitle = ""
     keywords = ""
     copyright = ""
-    menuMore = "show more"
-    writtenBy = "written by"
-    readMore = "read more"
-    readOtherPosts = "read other posts"
-    newerPosts = "newer posts"
-    olderPosts = "older posts"
-    minuteReadingTime = "min read"
-    dateFormatSingle = "2006-01-02"
-    dateFormatList = "2006-01-02"
-
-    [languages.en.params.logo]
-      logoText = "cd /home/ana/"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
+    # menuMore = "show more"
+    # writtenBy = "written by"
+    # readMore = "read more"
+    # readOtherPosts = "read other posts"
+    # newerPosts = "newer posts"
+    # olderPosts = "older posts"
+    # minuteReadingTime = "min read"
+    # dateFormatSingle = "2006-01-02"
+    # dateFormatList = "2006-01-02"
 
     [languages.en.menu]
       [[languages.en.menu.main]]
         identifier = "about"
         name = "about"
         url = "/about"
+
+      [[languages.en.menu.main]]
+        identifier = "posts"
+        name = "posts"
+        url = "/posts"
+
+# Social Icons
+[[params.social]]
+  name = "linkedin"
+  url = "https://linkedin.com/in/anamartinazzo"
+
+[[params.social]]
+  name = "github"
+  url = "https://github.com/amartinazzo"

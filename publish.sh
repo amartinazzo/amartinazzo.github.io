@@ -16,8 +16,8 @@ mkdir public
 git worktree prune
 rm -rf .git/worktrees/public/
 
-echo "checking out gh-pages branch into public"
-git worktree add -B gh-pages public origin/gh-pages
+echo "checking out master branch into public"
+git worktree add -B gh-pages public origin/master
 
 echo "removing public folder"
 rm -rf public/*
@@ -26,7 +26,7 @@ echo "generating site"
 HUGO_ENV="production" hugo
 
 echo "updating gh-pages branch"
-cd public && git add --all && git commit -m "publishing to gh-pages"
+cd public && git add --all && git commit -m "publishing to master"
 
-echo "pushing to publish"
-git push origin gh-pages -f
+echo "pushing to origin master"
+git push origin master -f

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on ana</title>
+		<link>https://amartinazzo.github.io/posts/</link>
+		<description>Recent content in Posts on ana</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<lastBuildDate>Wed, 10 Apr 2019 00:00:00 +0000</lastBuildDate>
+		<atom:link href="https://amartinazzo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Arch Linux Troubleshooting</title>
+			<link>https://amartinazzo.github.io/posts/arch-linux/</link>
+			<pubDate>Wed, 10 Apr 2019 00:00:00 +0000</pubDate>
+			
+			<guid>https://amartinazzo.github.io/posts/arch-linux/</guid>
+			<description>This post is a work in progress. I will try and register here tweaks I&amp;rsquo;ve used in order to solve glitches after a fresh Arch Linux install with the xfce desktop environment. Things are written in a Q&amp;amp;A fashion in no particular order (that is, in random order :)).
+xfce takes forever to start. clear the cache with rm -rf .config/ .cache/ .gnome*
+there is no internet. wpa_supplicant is missing.</description>
+			<content type="html"><![CDATA[
+
+<p>This post is a work in progress. I will try and register here tweaks I&rsquo;ve used in order to solve glitches after a fresh Arch Linux install with the xfce desktop environment. Things are written in a Q&amp;A fashion in no particular order (that is, in random order :)).</p>
+
+<h3 id="xfce-takes-forever-to-start">xfce takes forever to start.</h3>
+
+<p>clear the cache with <code>rm -rf .config/ .cache/ .gnome*</code></p>
+
+<h3 id="there-is-no-internet-wpa-supplicant-is-missing">there is no internet. wpa_supplicant is missing.</h3>
+
+<p>start a live Arch Linux environment (from a USB drive or CD), <a href="https://wiki.archlinux.org/index.php/Chroot">chroot</a> to your system, and then install the packages required to connect to the internet.</p>
+
+<pre><code>pacman -S wpa_supplicant wireless_tools wpa_actiond dialog
+</code></pre>
+
+<!-- https://bbs.archlinux.org/viewtopic.php?id=153711 -->
+
+<h3 id="volume-keys-don-t-work">volume keys don&rsquo;t work.</h3>
+
+<p>go to Settings &gt; Keyboard &gt; Application Shortcuts and add the commands:</p>
+
+<p><code>pactl -- set-sink-volume 0 +10%</code> for the shortcut XF86AudioRaiseVolume</p>
+
+<p><code>pactl -- set-sink-volume 0 -10%</code> for the shortcut XF86AudioLowerVolume</p>
+
+<!-- ### bluetooth doesn't work either. -->
+]]></content>
+		</item>
+		
+	</channel>
+</rss>

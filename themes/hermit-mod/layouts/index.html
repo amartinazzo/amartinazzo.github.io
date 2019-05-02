@@ -1,5 +1,4 @@
 {{ define "head" }}
-	<script type="text/javascript" src="basecfg.js" id="browser-ponies-config" async></script><script type="text/javascript" src="browserponies.js" id="browser-ponies-script" async></script><script type="text/javascript" async>/* <![CDATA[ */ (function (cfg) {BrowserPonies.setBaseUrl(cfg.baseurl);BrowserPonies.loadConfig(BrowserPoniesBaseConfig);BrowserPonies.loadConfig(cfg);})({"baseurl":"/","fadeDuration":0,"volume":0,"fps":15,"speed":2.5,"audioEnabled":false,"showFps":false,"showLoadProgress":false,"dontSpeak":true,"spawn":{"pinkie pie":0,"twilight sparkle":0,"silver spoon":0,"rainbow dash":1,"rainbow dash (filly)":1,"rarity":1,"rarity (filly)":1},"autostart":true}); /* ]]> */</script>
 	{{ if .Site.Params.bgImg -}}
 	<style>.bg-img {background-image: url('{{.Site.Params.bgImg}}');}</style>
 	{{- else if .Site.Params.images -}}
@@ -37,4 +36,5 @@
 			</p>
 		</div> -->
 	</div>
+	<script type="text/javascript" src="basecfg.js" id="browser-ponies-config"></script><script type="text/javascript" src="browserponies.js" id="browser-ponies-script"></script><script type="text/javascript">/* <![CDATA[ */ (function (cfg) {BrowserPonies.setBaseUrl(cfg.baseurl);BrowserPonies.loadConfig(BrowserPoniesBaseConfig);BrowserPonies.loadConfig(cfg);})({"baseurl":"/","fadeDuration":0,"volume":0,"fps":15,"speed":2.5,"audioEnabled":false,"showFps":false,"showLoadProgress":false,"dontSpeak":true,"spawn":{"pinkie pie":0,"twilight sparkle":0,"silver spoon":0,"rainbow dash":1,"rainbow dash (filly)":1,"rarity":1,"rarity (filly)":1},"autostart":true}); /* ]]> */</script>
 {{ end }}

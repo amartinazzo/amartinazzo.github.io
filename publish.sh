@@ -17,7 +17,7 @@ git worktree prune
 rm -rf .git/worktrees/public/
 
 echo "checking out master branch into public"
-git worktree add -B gh-pages public origin/master
+git worktree add -B master public origin/master
 
 echo "removing public folder"
 rm -rf public/*

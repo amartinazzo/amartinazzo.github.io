@@ -26,7 +26,7 @@ echo "generating site"
 HUGO_ENV="production" hugo
 
 echo "updating master branch"
-cd public && git add --all && git commit -m "publishing to master"
+cd public && git add --all && git commit -m "publish to master"
 
 echo "pushing to origin master"
 git push origin master -f

@@ -11,8 +11,10 @@ In my case, the log files said that Steam had no permission to access game files
 
 It is possible, however, to change the ownership of the entire mounting point. This should be ok if the HDD is not accessed by multiple users, and can be done by changing the `/etc/fstab` file. Find the line referring to the HDD mount and add user/group info. It should look something like this
 
-```UUID={MY_PARTITION_ID} /hdd ntfs defaults,uid={MY_OWNER_USER},gid={MY_OWNER_GROUP} 0 0```
+```
+UUID={MY_PARTITION_ID} /hdd ntfs defaults,uid={MY_OWNER_USER},gid={MY_OWNER_GROUP} 0 0
+```
 
 A list of all partitions and their UUIDs can be retrieved via `sudo blkid`.
 
-After updating fstab, simply reboot. Check that HDD ownership was updated and get ready to play.
+After updating fstab, reboot. Check that HDD ownership was updated and get ready to play.

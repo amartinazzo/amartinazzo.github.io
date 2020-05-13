@@ -3,7 +3,7 @@ date: 2019-04-10
 title: "Arch Linux Troubleshooting"
 ---
 
-This post is a work in progress. I will try and register here tweaks I've used in order to solve glitches after a fresh Arch Linux install with the xfce desktop environment. Things are written in a Q&A fashion in no particular order (that is, in random order :)).
+I have registered here some tweaks to solve glitches after a fresh Arch Linux install with the xfce desktop environment. Things are written in a Q&A fashion in no particular order (that is, in random order :)).
 
 ### xfce takes forever to start.
 

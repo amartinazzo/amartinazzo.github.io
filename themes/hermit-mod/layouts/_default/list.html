@@ -18,9 +18,9 @@
 				<li class="post-item">
 					<a href="{{.Permalink}}">
 						<span class="post-title"><h2>{{.Title}}</h2></span>
-						<span class="post-day">{{ .Date.Format .Site.Params.dateformShort }}</span>
+						<span class="post-day">{{ .Date.Format .Site.Params.dateformNum }}</span>
 					</a>
-					{{ .Summary | markdownify | truncate 250}}
+					{{ .Summary | markdownify | truncate 300}}
 				</li>
 				{{- end }}
 			</ul>

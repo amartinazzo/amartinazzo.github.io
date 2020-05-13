@@ -1,36 +1,45 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ana</title>
-    <link>https://amartinazzo.github.io/</link>
+    <link>/</link>
     <description>Recent content on ana</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 13 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://amartinazzo.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Running Windows games on Linux with Steam Play</title>
+      <link>/posts/steam/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/steam/</guid>
+      <description>There are tons of tutorials going over how to try and run Windows games directly from Linux using Steam. After following a mix of advices from various places, I still could not run any Windows games. They would crash shortly after a &amp;ldquo;Preparing to launch&amp;rdquo; popup appeared.
+In many cases, crashes are caused by stuff that has nothing to do with the games themselves. To figure out what is going on, it&amp;rsquo;s a great idea to enable detailed logging.</description>
+    </item>
+    
+    <item>
       <title>Arch Linux Troubleshooting</title>
-      <link>https://amartinazzo.github.io/posts/arch-linux/</link>
+      <link>/posts/arch-linux/</link>
       <pubDate>Wed, 10 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://amartinazzo.github.io/posts/arch-linux/</guid>
-      <description>This post is a work in progress. I will try and register here tweaks I&amp;rsquo;ve used in order to solve glitches after a fresh Arch Linux install with the xfce desktop environment. Things are written in a Q&amp;amp;A fashion in no particular order (that is, in random order :)).
+      <guid>/posts/arch-linux/</guid>
+      <description>I have registered here some tweaks to solve glitches after a fresh Arch Linux install with the xfce desktop environment. Things are written in a Q&amp;amp;A fashion in no particular order (that is, in random order :)).
 xfce takes forever to start. clear the cache with rm -rf .config/ .cache/ .gnome*
-there is no internet. wpa_supplicant is missing.</description>
+there is no internet. wpa_supplicant is missing. start a live Arch Linux environment (from a USB drive or CD), chroot to your system, and then install the packages required to connect to the internet.</description>
     </item>
     
     <item>
       <title>about</title>
-      <link>https://amartinazzo.github.io/about/</link>
+      <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://amartinazzo.github.io/about/</guid>
+      <guid>/about/</guid>
       <description>I am a mechanical engineer turned software engineer. I&amp;rsquo;ve worked as a back-end developer and as a data scientist, and am currently pursuing a Master in Computer Science at the Institute of Mathematics and Statistics of the University of São Paulo. My research project in on machine-learned encodings for multispectral astronomical images.
-*
-This website was built with Hugo and based on the Hermit theme.</description>
+   This website was built with Hugo and based on the Hermit theme.</description>
     </item>
     
   </channel>

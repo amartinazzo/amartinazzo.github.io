@@ -5,42 +5,34 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-
 <meta itemprop="name" content="Arch Linux Troubleshooting">
-<meta itemprop="description" content="This post is a work in progress. I will try and register here tweaks I&rsquo;ve used in order to solve glitches after a fresh Arch Linux install with the xfce desktop environment. Things are written in a Q&amp;A fashion in no particular order (that is, in random order :)).
+<meta itemprop="description" content="I have registered here some tweaks to solve glitches after a fresh Arch Linux install with the xfce desktop environment. Things are written in a Q&amp;A fashion in no particular order (that is, in random order :)).
 xfce takes forever to start. clear the cache with rm -rf .config/ .cache/ .gnome*
-there is no internet. wpa_supplicant is missing.">
-
-
+there is no internet. wpa_supplicant is missing. start a live Arch Linux environment (from a USB drive or CD), chroot to your system, and then install the packages required to connect to the internet.">
 <meta itemprop="datePublished" content="2019-04-10T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-04-10T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="137">
+<meta itemprop="wordCount" content="125">
 
 
 
-<meta itemprop="keywords" content="" />
-<meta property="og:title" content="Arch Linux Troubleshooting" />
-<meta property="og:description" content="This post is a work in progress. I will try and register here tweaks I&rsquo;ve used in order to solve glitches after a fresh Arch Linux install with the xfce desktop environment. Things are written in a Q&amp;A fashion in no particular order (that is, in random order :)).
+<meta itemprop="keywords" content="" /><meta property="og:title" content="Arch Linux Troubleshooting" />
+<meta property="og:description" content="I have registered here some tweaks to solve glitches after a fresh Arch Linux install with the xfce desktop environment. Things are written in a Q&amp;A fashion in no particular order (that is, in random order :)).
 xfce takes forever to start. clear the cache with rm -rf .config/ .cache/ .gnome*
-there is no internet. wpa_supplicant is missing." />
+there is no internet. wpa_supplicant is missing. start a live Arch Linux environment (from a USB drive or CD), chroot to your system, and then install the packages required to connect to the internet." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://amartinazzo.github.io/posts/arch-linux/" />
-<meta property="article:published_time" content="2019-04-10T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2019-04-10T00:00:00&#43;00:00"/><meta property="og:site_name" content="ana" />
+<meta property="og:url" content="/posts/arch-linux/" />
+<meta property="article:published_time" content="2019-04-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-04-10T00:00:00+00:00" /><meta property="og:site_name" content="ana" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Arch Linux Troubleshooting"/>
-<meta name="twitter:description" content="This post is a work in progress. I will try and register here tweaks I&rsquo;ve used in order to solve glitches after a fresh Arch Linux install with the xfce desktop environment. Things are written in a Q&amp;A fashion in no particular order (that is, in random order :)).
+<meta name="twitter:description" content="I have registered here some tweaks to solve glitches after a fresh Arch Linux install with the xfce desktop environment. Things are written in a Q&amp;A fashion in no particular order (that is, in random order :)).
 xfce takes forever to start. clear the cache with rm -rf .config/ .cache/ .gnome*
-there is no internet. wpa_supplicant is missing."/>
+there is no internet. wpa_supplicant is missing. start a live Arch Linux environment (from a USB drive or CD), chroot to your system, and then install the packages required to connect to the internet."/>
 
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+
 	<link rel="shortcut icon" href="/favicon.ico">
 <title>ana – Arch Linux Troubleshooting</title>
-	<link rel="stylesheet" href="https://amartinazzo.github.io/css/style.min.de3941e73d86eb42efddfae9317d29015843fce8bdad82f1943df5452c06189b.css" integrity="sha256-3jlB5z2G60Lv3frpMX0pAVhD/Oi9rYLxlD31RSwGGJs=">
+	<link rel="stylesheet" href="/css/style.min.de3941e73d86eb42efddfae9317d29015843fce8bdad82f1943df5452c06189b.css" integrity="sha256-3jlB5z2G60Lv3frpMX0pAVhD/Oi9rYLxlD31RSwGGJs=">
 	
 </head>
 
@@ -50,11 +42,11 @@ there is no internet. wpa_supplicant is missing."/>
 		<div class="hdr-wrapper section-inner">
 			<div class="hdr-left">
 				<div class="site-branding">
-					<a href="https://amartinazzo.github.io/">home</a>
+					<a href="/">home</a>
 				</div>
 				<nav class="site-nav hide-in-mobile">
-					<a href="https://amartinazzo.github.io/about">about</a>
-					<a href="https://amartinazzo.github.io/posts">posts</a>
+					<a href="/about">about</a>
+					<a href="/posts">posts</a>
 				</nav>
 			</div>
 			<div class="hdr-right hdr-icons">
@@ -64,8 +56,8 @@ there is no internet. wpa_supplicant is missing."/>
 	</header>
 	<div id="mobile-menu" class="animated fast">
 		<ul>
-			<li><a href="https://amartinazzo.github.io/about">about</a></li>
-			<li><a href="https://amartinazzo.github.io/posts">posts</a></li>
+			<li><a href="/about">about</a></li>
+			<li><a href="/posts">posts</a></li>
 		</ul>
 	</div>
 
@@ -77,41 +69,31 @@ there is no internet. wpa_supplicant is missing."/>
 				<h1>Arch Linux Troubleshooting</h1>
 			</header>
 			<div class="content">
-				
-
-<p>This post is a work in progress. I will try and register here tweaks I&rsquo;ve used in order to solve glitches after a fresh Arch Linux install with the xfce desktop environment. Things are written in a Q&amp;A fashion in no particular order (that is, in random order :)).</p>
-
+				<p>I have registered here some tweaks to solve glitches after a fresh Arch Linux install with the xfce desktop environment. Things are written in a Q&amp;A fashion in no particular order (that is, in random order :)).</p>
 <h3 id="xfce-takes-forever-to-start">xfce takes forever to start.<a href="#xfce-takes-forever-to-start" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
-
 <p>clear the cache with <code>rm -rf .config/ .cache/ .gnome*</code></p>
-
-<h3 id="there-is-no-internet-wpa-supplicant-is-missing">there is no internet. wpa_supplicant is missing.<a href="#there-is-no-internet-wpa-supplicant-is-missing" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
-
+<h3 id="there-is-no-internet-wpa_supplicant-is-missing">there is no internet. wpa_supplicant is missing.<a href="#there-is-no-internet-wpa_supplicant-is-missing" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>start a live Arch Linux environment (from a USB drive or CD), <a href="https://wiki.archlinux.org/index.php/Chroot">chroot</a> to your system, and then install the packages required to connect to the internet.</p>
-
 <pre><code>pacman -S wpa_supplicant wireless_tools wpa_actiond dialog
-</code></pre>
-
-<!-- https://bbs.archlinux.org/viewtopic.php?id=153711 -->
-
-<h3 id="volume-keys-don-t-work">volume keys don&rsquo;t work.<a href="#volume-keys-don-t-work" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
-
+</code></pre><!-- raw HTML omitted -->
+<h3 id="volume-keys-dont-work">volume keys don&rsquo;t work.<a href="#volume-keys-dont-work" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>go to Settings &gt; Keyboard &gt; Application Shortcuts and add the commands:</p>
-
 <p><code>pactl -- set-sink-volume 0 +10%</code> for the shortcut XF86AudioRaiseVolume</p>
-
 <p><code>pactl -- set-sink-volume 0 -10%</code> for the shortcut XF86AudioLowerVolume</p>
-
-<!-- ### bluetooth doesn't work either. -->
+<!-- raw HTML omitted -->
 
 			</div>
 			<hr class="post-end">
 			<footer class="post-info">
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>137 Words</p>
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-04-09 21:00 -0300</p>
+				
+				
+				
 			</footer>
 		</article>
 		<div class="post-nav thin">
+			<a class="next-post" href="/posts/steam/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>Running Windows games on Linux with Steam Play</span>
+			</a>
 		</div>
 		<div id="comments" class="thin">
 </div>
@@ -120,7 +102,7 @@ there is no internet. wpa_supplicant is missing."/>
 
 
 
-	<script src="https://amartinazzo.github.io/js/main.min.784417f5847151f848c339cf0acb13a06cbb648b1483435a28ed4556c4ead69b.js" integrity="sha256-eEQX9YRxUfhIwznPCssToGy7ZIsUg0NaKO1FVsTq1ps="></script>
+	<script src="/js/main.min.784417f5847151f848c339cf0acb13a06cbb648b1483435a28ed4556c4ead69b.js" integrity="sha256-eEQX9YRxUfhIwznPCssToGy7ZIsUg0NaKO1FVsTq1ps="></script>
 
 </body>
 
